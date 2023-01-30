@@ -51,3 +51,12 @@ const addContact = async (name, email, phone) => {
     console.log(`Error: ${err.message}`);
   }
 };
+
+listContacts();
+
+module.exports = {
+    listContacts,
+    getContactById,
+    removeContact,
+    addContact,
+}
